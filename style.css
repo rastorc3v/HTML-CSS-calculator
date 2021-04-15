@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+#formula {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#numsLeft, #numsRight {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+    max-width: 250px;
+}
+
+/* ----------------- ///// ---------------- /////-------------------- */
+body {
+    counter-reset: first-counter;
+}
+
+.container {
+    counter-reset: second-counter;
+}
+
+html {
+    counter-reset: result;
+}
+
+.btn {
+    position: absolute;
+    left: -9999px;
+}
+
+.first:checked ~ .first {
+    display: inline-block;
+    counter-increment: first-counter;
+}
+
+#first::after {
+    content: counter(first-counter) '+';
+}
+
+.second:checked ~ .second {
+    display: inline-block;
+    counter-increment: second-counter;
+}
+
+#second::after {
+    content: counter(second-counter) '=';
+}
+
+.first, .second {
+    display: none;
+}
+
+.btn::after {
+    content: '.';
+}
+
+.btn::after {
+    counter-increment: result;
+}
+
+#result::after {
+    content: counter(result);
+}
+
+.num {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 2px;
+}

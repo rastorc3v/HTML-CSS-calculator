@@ -2,9 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="container">
+    <div id="numsLeft">
+        <label for="z1" class="num">9</label>
+        <label for="z2" class="num">8</label>
+        <label for="z3" class="num">7</label>
+        <label for="z4" class="num">6</label>
+        <label for="z5" class="num">5</label>
+        <label for="z6" class="num">4</label>
+        <label for="z7" class="num">3</label>
+        <label for="z8" class="num">2</label>
+        <label for="z9" class="num">1</label>
+        <label for="z0" class="num">0</label>
+
+        <input type="radio" class="first btn" data-value="1" id="z1" name="number1">
+        <input type="radio" class="first btn" data-value="2" id="z2" name="number1">
+        <input type="radio" class="first btn" data-value="3" id="z3" name="number1">
+        <input type="radio" class="first btn" data-value="4" id="z4" name="number1">
+        <input type="radio" class="first btn" data-value="5" id="z5" name="number1">
+        <input type="radio" class="first btn" data-value="6" id="z6" name="number1">
+        <input type="radio" class="first btn" data-value="7" id="z7" name="number1">
+        <input type="radio" class="first btn" data-value="8" id="z8" name="number1">
+        <input type="radio" class="first btn" data-value="9" id="z9" name="number1">
+        <input type="radio" class="first btn" data-value="0" id="z0" name="number1">
+    </div>
+    <div id="numsRight">
+        <label for="f1" class="num">9</label>
+        <label for="f2" class="num">8</label>
+        <label for="f3" class="num">7</label>
+        <label for="f4" class="num">6</label>
+        <label for="f5" class="num">5</label>
+        <label for="f6" class="num">4</label>
+        <label for="f7" class="num">3</label>
+        <label for="f8" class="num">2</label>
+        <label for="f9" class="num">1</label>
+        <label for="f0" class="num">0</label>
+
+        <input type="radio" class="second btn" data-value="1" id="f1" name="number">
+        <input type="radio" class="second btn" data-value="2" id="f2" name="number">
+        <input type="radio" class="second btn" data-value="3" id="f3" name="number">
+        <input type="radio" class="second btn" data-value="4" id="f4" name="number">
+        <input type="radio" class="second btn" data-value="5" id="f5" name="number">
+        <input type="radio" class="second btn" data-value="6" id="f6" name="number">
+        <input type="radio" class="second btn" data-value="7" id="f7" name="number">
+        <input type="radio" class="second btn" data-value="8" id="f8" name="number">
+        <input type="radio" class="second btn" data-value="9" id="f9" name="number">
+        <input type="radio" class="second btn" data-value="0" id="f0" name="number">
+    </div>
+</div>
+<div id="formula">
+    <div id="first"></div>
+    <div id="second"></div>
+    <div id="result"></div>
+</div>
 </body>
 </html>
